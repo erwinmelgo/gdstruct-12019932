@@ -33,7 +33,7 @@ public class Main {
           System.out.println("Does it contain Asuna? ");
           System.out.println(playerLinkedList.contains(asuna));
 
-          
+
           System.out.println("At which index? ");
           System.out.println(playerLinkedList.indexOf(asuna));
 
