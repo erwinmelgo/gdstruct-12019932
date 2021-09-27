@@ -5,19 +5,15 @@ import java.util.EmptyStackException;
 public class CardStack {
     private Card[] stack;
     private int top;
+    private int number = 0;
 
     public int getNumber() {
         return number;
     }
-
-    private int number = 0;
-
-
     public CardStack(int capacity)
     {
         stack = new Card[capacity];
     }
-
     public void push(Card card)
     {
         if (top == stack.length)
@@ -29,7 +25,6 @@ public class CardStack {
         stack[top++] = card;
         number++;
     }
-
     public Card pop()
     {
         if (isEmpty())
@@ -42,7 +37,6 @@ public class CardStack {
         number--;
         return poppedCard;
     }
-
     public Card peek()
     {
         if (isEmpty())
@@ -51,7 +45,6 @@ public class CardStack {
         }
         return stack[top - 1];
     }
-
     public boolean isEmpty()
     {
         return top == 0;
@@ -68,8 +61,5 @@ public class CardStack {
     {
         return number;
     }
-
-
-
 }
 

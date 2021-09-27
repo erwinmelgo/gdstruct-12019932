@@ -1,6 +1,7 @@
 package com.erwinmelgo;
 
 import java.util.LinkedList;
+import java.util.Scanner;
 
 
 public class Main {
@@ -101,6 +102,7 @@ public class Main {
 
         while(!playerDeck.isEmpty())
         {
+            new Scanner(System.in).nextLine();
             rngCards = (int)Math.floor(Math.random()*(max-min+1)+min);
             rngCommand = (int)Math.floor(Math.random()*(maxRngCommand-min+1)+min);
             evaluateCommand(rngCommand,rngCards,numberOfCards,hand,playerDeck,pile);
