@@ -4,9 +4,7 @@ public class Main {
 
     public static void main(String[] args) {
 	    int[] numbers = {-10, 20, 30, 55, 28, 22, 100, 99, 23,47,69};
-
-        int i = ferrariPeek(numbers, 20);
-
+        int i = ferrariPeek(numbers, 3);
         System.out.println(i);
 
     }
@@ -25,18 +23,10 @@ public class Main {
             {
                 return endPoint;
             }
-            if (startPoint != input[i] && endPoint != input[input.length - 2])
+            else
             {
                 startPoint = input[i]; // start point will disregard first element and move on to the next as new start point
                 endPoint = (input[i] - input.length); // end point will move on to the second to the last element as new end point
-                if (startPoint == value)
-                {
-                    return startPoint;
-                }
-                if (endPoint == value)
-                {
-                    return endPoint;
-                }
             }
         }
         return -1;
