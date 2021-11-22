@@ -4,9 +4,8 @@ public class Main {
 
     public static void main(String[] args) {
 	    int[] numbers = {-10, 20, 30, 55, 28, 22, 100, 99, 23,47,69};
-        int i = ferrariPeek(numbers, 3);
+        int i = ferrariPeek(numbers, 22);
         System.out.println(i);
-
     }
 
     public static int ferrariPeek(int[] input, int value)

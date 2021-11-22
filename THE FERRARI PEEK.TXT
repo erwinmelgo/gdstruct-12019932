@@ -1,0 +1,7 @@
+1. Initialize endpoint and startpoint
+2. Start for loop to iterate the array where i is 1 since there is already a startPoint
+3. If the startPoint is equal to the value that is being searched, return startPoint
+4. Same happens with the endPoint
+5. Otherwise, the next index will be set as the start point and the second to the last index will be the end point.
+6. Repeat loop until the value is found
+7. If value is not found, return -1
